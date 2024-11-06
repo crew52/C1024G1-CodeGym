@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Form Basic</title>
+</head>
+<body>
+<form action="get">
+    <h3>Order Form</h3>
+    <br>
+
+    <label>What would you like to buy ?
+        <br>
+        <select>
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+            <option value="d">D</option>
+        </select>
+        <br>
+    </label>
+
+    <label>How many would you like to order?
+        <br>
+        <input type="radio"> 1- 10$ <br>
+        <input type="radio"> 2- 20$ <br>
+        <input type="radio"> 3- 30$<br>
+    </label>
+
+    <label> Name
+        <br>
+        <input type="text" name="firstName" placeholder="FirstName">
+        <input type="text" name="lastName" placeholder="LastName">
+    </label>
+    <br>
+
+    <label for="email"> Email
+        <br>
+        <input type="email" id="email">
+    </label>
+    <br>
+
+    <label> Phone Number
+        <br>
+        <input type="number" size="5" name="phoneNumber1"> -
+        <input type="number" size="5" name="phoneNumber2"> -
+        <input type="number" size="5" name="phoneNumber3"> -
+    </label>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

@@ -5,6 +5,7 @@
     <title>Form Basic 2</title>
 </head>
 <body>
+<!--P1-->
 <form action="" method="get">
     <table>
         <tr>
@@ -43,4 +44,62 @@
     </table>
 </form>
 </body>
+<br>
+<hr>
+<br>
+
+<!--P2-->
+<form action="" method="get">
+    <table>
+        <tr>
+            <td colspan="2">STUDENT REGISTRATION</td>
+        </tr>
+        <tr>
+            <td><label for="name1">Full Name</label></td>
+            <td><input type="text" name="name1" id="name1"></td>
+        </tr>
+        <tr>
+            <td><label for="dateOfBirth">Date Of Birth</label></td>
+            <td><input type="date" name="dateOfBirth" id="dateOfBirth"></td>
+        </tr>
+        <tr>
+            <td><label>Gender</label></td>
+            <td>
+                <input type="radio" name="Gender" id="male"> Male
+                <input type="radio" name="Gender" id="female"> Female
+            </td>
+        </tr>
+        <tr>
+            <td><label for="address">Address</label></td>
+            <td><textarea name="address" id="address" cols="15" rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="class">Class</label></td>
+            <td>
+                <select name="class" id="class">
+                    <option>-Choose class-</option>
+                    <option value="a1">A1</option>
+                    <option value="a2">A2</option>
+                    <option value="a3">A3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="email1">Email</label></td>
+            <td><input type="email" name="email1" id="email1"></td>
+        </tr>
+        <tr>
+            <td ><label for="phoneNumber">Phone Number</label></td>
+            <td><input type="tel" name="phoneNumber" id="phoneNumber"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Registration</button>
+                <button type="submit">Reset</button>
+            </td>
+        </tr>
+    </table>
+
+</form>
 </html>

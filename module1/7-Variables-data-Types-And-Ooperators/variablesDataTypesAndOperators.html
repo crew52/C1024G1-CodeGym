@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variables and data types and operators</title>
+</head>
+<body>
+<!--p1-->
+<form action="">
+  <label for="physics"> Physics<input type="number" id="physics"></label> <br>
+  <label for="chemistry"> Chemistry<input type="number" id="chemistry"></label> <br>
+  <label for="biology"> Biology<input type="number" id="biology"></label> <br>
+  <button type="button" onclick="avg()">Avg</button>
+  <p id="resultAvg"></p>
+</form>
+<hr>
+
+<!--b2-->
+<label for="celsius"> Celsius<input type="number" id="celsius"></label> <br>
+<button type="button" onclick="changeOF()">Avg</button>
+<p id="changeF"></p>
+<br>
+<hr>
+<!--b3-->
+<label for="r"> Celsius<input type="number" id="r"></label> <br>
+<button type="button" onclick="areaAndPerimeter()">Area and Perimeter</button>
+<p id="displayPerimeter"></p>
+<p id="displayArea"></p>
+
+<script>
+<!--  b1-->
+  let a;
+  let b;
+  let c;
+  let d;
+
+  function getDataAvg () {
+    a = parseInt(document.getElementById('physics').value);
+    b = parseInt(document.getElementById('chemistry').value);
+    c = parseInt(document.getElementById('biology').value);
+  }
+  function displayData () {
+    document.getElementById("resultAvg").innerHTML = "Result: " + d;
+  }
+  function avg(){
+    getDataAvg();
+    d = (a + b + c)/ 3;
+    displayData ();
+  }
+
+  // b2
+  function changeOF(){
+      let celsius = parseFloat(document.getElementById('celsius').value);
+      let fahrenheit = (9*celsius)/5 + 32;
+    document.getElementById("changeF").innerHTML = "Result: " + fahrenheit;
+  }
+  // b3-b4
+  function areaAndPerimeter(){
+    let r = parseFloat(document.getElementById('r').value);
+    let area = Math.PI* r*r;
+    let perimeter = Math.PI* r*2;
+    document.getElementById("displayPerimeter").innerHTML = "Result: " + perimeter;
+    document.getElementById("displayArea").innerHTML = "Result: " + area;
+  }
+
+</script>
+</body>
+</html>

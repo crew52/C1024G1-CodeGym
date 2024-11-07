@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer applications</title>
+</head>
+<body>
+<h2>Calculator</h2>
+<form action="" method="get">
+  <input type="number" id="number1">
+  <input type="number" id="number2">
+  <br>
+  <br>
+  <button type="button" onclick="addition()">Addition(+) </button>
+  <button type="button" onclick="subtraction()">Subtraction(-)</button>
+  <button type="button" onclick="multiplication()" >Multiplication(*)</button>
+  <button type="button" onclick="division()" >Division(/)</button>
+  <br>
+  <p id="result"></p>
+</form>
+<br>
+<script>
+  let a;
+  let b;
+  let c;
+  function getData () {
+    a = parseInt(document.getElementById('number1').value);
+    b = parseInt(document.getElementById('number2').value);
+  }
+  function displayData () {
+    document.getElementById("result").innerHTML = "Result: " + c;
+  }
+  function addition(){
+    getData();
+    c = a + b;
+    displayData ()
+  }
+
+  function subtraction(){
+    getData();
+    c = a - b;
+    displayData ()
+  }
+
+  function multiplication(){
+    getData();
+    c = a * b;
+    displayData ()
+  }
+
+  function division(){
+    getData();
+    c = a / b;
+    displayData();
+  }
+
+</script>
+</body>
+</html>

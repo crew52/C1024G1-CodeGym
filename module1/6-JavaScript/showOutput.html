@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show output</title>
+</head>
+<body>
+<button type="button" onclick="showClick()"> Click me</button>
+<br>
+<button type="button" onclick="showClick2()" id="messageDiv"> Click me 2</button>
+<br>
+<button type="button" onclick="showClick3()"> Click me 3</button>
+<br>
+<button type="button" onclick="showClick4()"> Click me 4</button>
+<script>
+    function showClick() {
+        alert('Hello')
+    }
+
+    function showClick2() {
+        document.getElementById('messageDiv').innerText = "Hello 2"
+    }
+    function showClick3() {
+        document.write('hello 3')
+    }
+    function showClick4() {
+        console.log('hello 4')
+    }
+</script>
+</body>
+</html>
